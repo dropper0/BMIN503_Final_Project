@@ -36,7 +36,7 @@ WITH transfusions_in_scope AS (
         AND order_datetime BETWEEN '2023-07-01' AND '2023-12-31'),
 ```
 
-### Created CTEs to find the most recent pre-transfusion and post-transfusion platelet counts using Row Number functionality, limiting results to a 7 day window before and after transfusions. 
+### Created CTEs to find the most recent pre-transfusion and post-transfusion platelet counts using Row Number functionality, limiting results to a 7 day window before and after transfusions.
 
 ```{sql}
 pre_CBC_final AS (
@@ -384,7 +384,7 @@ The current models treat the patient as a closed system where input (transfusion
 
 A significant methodological limitation identified in this pilot was the time window for the pre- and post-transfusion CBC. The query allowed for a window of up to 7 days. In a clinical setting, a platelet count taken 6 days after a transfusion may not reflect than the efficacy of the specific transfusion event.
 
-### Variable Dosing Protocols 
+### Variable Dosing Protocols
 
 In practice, many pediatric patients receive full units of platelets (similar to adult practice) due to multiple factors including patient age, amount of bleeding, and clinical scenarios, including transfusion in the operating room. This blurs the distinction between specific weight-based dosing and standard unit dosing.
 
